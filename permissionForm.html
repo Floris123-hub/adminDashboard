@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard</title>
+    <title>Dashboard - Blank</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -56,26 +56,51 @@
 
             <!-- Nav Item - PRESENCE Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="qrcode.html">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-qrcode fa-cog"></i>
                     <span>Présence</span>
                 </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - PERMISSION Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="permissionForm.html">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-hand-paper"></i>
                     <span>Permission</span>
                 </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Nav Item - CONGES Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="blank.html">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-bed"></i>
                     <span>Congés</span>
                 </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Divider -->
@@ -98,8 +123,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="blank.html">
                     <i class="far fa-list-alt"></i>
-                    <span>Gérer les demandes de Permission</span>
-                </a>
+                    <span>Gérer les demandes de Permission</span></a>
             </li>
 
             <!-- Nav Item - GERER CONGES -->
@@ -322,81 +346,69 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Tableau de bord</h1>
-                    </div>
+                    <div class="col-lg-5" style="margin-left: auto; margin-right: auto;">
+                        <div class="p-5 ">
+                            <div class="text-center ">
+                                <h1 class="h4 text-gray-900 mb-4 ">Veuillez remplir ce formulaire</h1>
+                            </div>
+                            <form class="user" style="text-align: center;">
+                                <div class=" form-group ">
+                                    <span><strong>Permissionnaire</strong></span>
+                                    <input type=" text " class="form-control form-control-user " name="permissionnaire ">
+                                </div>
 
-                    <h1>CONTENU</h1>
+                                <br>
 
-                    <div class="row">
+                                <div>
+                                    <span><strong>Début</strong></span>
+                                </div>
 
-                        <div class="col-lg-6">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <span>Date</span>
+                                        <input type="date" class="form-control form-control-user" name="datefin" style="text-align: center;">
+                                    </div>
 
-                            <!-- Collapsable Card Example -->
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Accordion -->
-                                <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                                    <h6 class="m-0 font-weight-bold text-primary">NOTE DE SERVICE N°XXXX</h6>
-                                </a>
-                                <!-- Card Content - Collapse -->
-                                <div class="collapse show" id="collapseCardExample">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illum omnis possimus odio? Sequi explicabo mollitia vitae quibusdam rem? Quam accusantium explicabo iure repellendus mollitia animi dolore consequatur. Modi, natus? <strong>Click on the card header</strong>                                        to see the card body collapse and expand!
+                                    <div class="col-sm-6">
+                                        <span>Heure</span>
+                                        <input type="time" class="form-control form-control-user" name="heurefin" style="text-align: center;">
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Basic Card Example -->
-                            <!-- Collapsable Card Example -->
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Accordion -->
-                                <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                                    <h6 class="m-0 font-weight-bold text-primary">NOTE DE SERVICE N°XXXX</h6>
-                                </a>
-                                <!-- Card Content - Collapse -->
-                                <div class="collapse show" id="collapseCardExample">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maxime reiciendis repudiandae corporis eaque, provident illum alias culpa temporibus illo consequatur at. Hic, ipsum nobis amet nam incidunt a non. <strong>Click on the card header</strong>                                        to see the card body collapse and expand!
+                                <br>
+
+                                <div>
+                                    <span><strong>Fin</strong></span>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <span>Date</span>
+                                        <input type="date" class="form-control form-control-user" name="datedebut" style="text-align: center;">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <span>Heure</span>
+                                        <input type="time" class="form-control form-control-user" name="heuredebut" style="text-align: center;">
                                     </div>
                                 </div>
-                            </div>
+
+                                <br>
+
+                                <div class=" form-group ">
+                                    <span><strong>Motif de la permission</strong></span>
+                                    <input type=" text " class="form-control form-control-user " name="motif ">
+                                </div>
+
+                                <br>
+
+                                <a href="index.html " class="btn btn-primary btn-user btn-block ">Envoyer la demande</a>
+
+                            </form>
 
                         </div>
-
-                        <div class="col-lg-6">
-
-                            <!-- Collapsable Card Example -->
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Accordion -->
-                                <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                                    <h6 class="m-0 font-weight-bold text-primary">NOTE DE SERVICE N°XXXX</h6>
-                                </a>
-                                <!-- Card Content - Collapse -->
-                                <div class="collapse show" id="collapseCardExample">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore, quidem cumque velit earum voluptatum. Cupiditate quae ipsum repellendus veritatis magnam. Laborum sunt consequatur similique repellat animi totam error? Possimus.<strong>Click on the card header</strong>                                        to see the card body collapse and expand!
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Collapsable Card Example -->
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Accordion -->
-                                <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                                    <h6 class="m-0 font-weight-bold text-primary">NOTE DE SERVICE N°XXXX</h6>
-                                </a>
-                                <!-- Card Content - Collapse -->
-                                <div class="collapse show" id="collapseCardExample">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repudiandae provident cupiditate beatae quod maiores dicta dolore dolores quas harum, reprehenderit distinctio aperiam quam inventore incidunt modi culpa error corporis! <strong>Click on the card header</strong>                                        to see the card body collapse and expand!
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
                     </div>
+
                 </div>
                 <!-- /.container-fluid -->
 
@@ -404,10 +416,10 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; OSSPO 2020</span>
+            <footer class="sticky-footer bg-white ">
+                <div class="container my-auto ">
+                    <div class="copyright text-center my-auto ">
+                        <span>Copyright &copy; Your Website 2019</span>
                     </div>
                 </div>
             </footer>
@@ -420,48 +432,39 @@
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
+    <a class="scroll-to-top rounded " href="#page-top ">
+        <i class="fas fa-angle-up "></i>
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
+    <div class="modal fade " id="logoutModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">Ready to Leave?</h5>
+                    <button class="close " type="button " data-dismiss="modal " aria-label="Close ">
+            <span aria-hidden="true ">×</span>
           </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                <div class="modal-body ">Select "Logout " below if you are ready to end your current session.</div>
+                <div class="modal-footer ">
+                    <button class="btn btn-secondary " type="button " data-dismiss="modal ">Cancel</button>
+                    <a class="btn btn-primary " href="login.html ">Logout</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/sb-admin-2.min.js "></script>
 
 </body>
-
-</html>
 
 </html>
